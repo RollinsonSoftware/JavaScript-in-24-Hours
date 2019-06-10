@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fahrenheit From Celsiuis</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var cTemp;
+		function getTempFah(celsius)
+		{
+			cTemp = celsius; // Temperature in Celsius.
+			var hTemp = ((cTemp * 9) / 5) + 32; //temperature in Fahrenheit.
+			return hTemp;
+		}
+
+		getTempFah(100); // Have the run the method once to initialize the variables. 
+
+		document.write("Temperature in Celsius: " + cTemp + " degrees.\n");
+		document.write("Temperature in Fahrenheit: " + getTempFah(cTemp) + " degrees.");
+	</script>
+</body>
+</html>
